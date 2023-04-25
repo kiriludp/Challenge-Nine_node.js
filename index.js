@@ -75,10 +75,11 @@ inquirer
   - [Usage](#usage)
   - [What I Learned](#learn)
   - [Installation Steps](#installation)
-  - [Project Features] (#features)
+  - [Project Features](#features)
   - [Tests](#tests)
   - [Collaborators](#credits)
-  - [Contact Information](#usernamer)(#email)
+  - [Contact Information](#usernamer)
+  - [Email](#email)
   - [File Lisences](#license)
 
 

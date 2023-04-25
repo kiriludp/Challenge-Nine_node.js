@@ -6,35 +6,36 @@
   - [Usage](#usage)
   - [What I Learned](#learn)
   - [Installation Steps](#installation)
-  - [Project Features] (#features)
+  - [Project Features](#features)
   - [Tests](#tests)
   - [Collaborators](#credits)
-  - [Contact Information](#usernamer)(#email)
+  - [Contact Information](#usernamer)
+  - [Email](#email)
   - [File Lisences](#license)
 
 
   ## Description
-    Provide a professional template for github users togenerate a README
+    This is a generator that provides the framework and foundation for the creation of a professional, detailed README applicable for any project.
 
   ## Usage
-    Make a readme
+    To allow for standardized parameters for developers and the READMEs for multiple projects. The application removes the need to re-write all details of a README and instead, allows for the user to change only the details based on each project.
     
   ## Learn
-    it is hard
+    The devil is in the details-- it is imparative that each detail in the coding framework is correctly connected to the next. Understanding potential errors that could arise in each test is  the only solution to actually fixing  problems. 
 
   ## Steps
-    must include npm inquirer v 8.2.4
+    users must have npm inquirer@8.2.4 installed in order to use this generator.
 
   ## Features
-    its pretty
+    The details of the README can be changed to include not only the detailed areas, but also the information to include such as contact details, links, etc.
 
   ## Tests
-    so many sads
+    testReadMe included-- please see screen shots and included video.
 
-    ![A picture of noodles with two hands; one holding chopsticks](./assets/noods.PNG)
+    ![A picture of noodles with two hands; one holding chopsticks](assetshaegeumchops.PNG)
 
   ## Collaborators
-    agustd and jimin
+    Special thanks to UW Coding Bootcamp instructor and TAs for detailed lessons and attention. Thanks to W3Schools and my fellow classmates for helping and feeling with me.   Calcifer the Kitten is heavily credited with providing emotional support. Shout out  to my music plaulists
 
   ## Contact Information 
     kiriludp
