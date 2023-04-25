@@ -68,9 +68,9 @@ inquirer
 
     .then((answers) => {
         var genread = `
-         # ${answers.title}
+        ${answers.title}
 
-  ##Table of Contents
+  ## Table of Contents
   - [Project Description](#description)
   - [Usage](#usage)
   - [What I Learned](#learn)
@@ -101,8 +101,7 @@ inquirer
   ## Tests
     ${answers.tests}
 
-    ![A picture of noodles with two hands; one holding chopsticks](\assets\haegeumchops.PNG)
-
+    
   ## Collaborators
     ${answers.credits}
 
@@ -114,7 +113,7 @@ inquirer
     ${answers.lisence}
 `;
 
-        fs.writeFile("README.md", genread, (err) =>
+        fs.writeFile("GenReadMe/testREADME.md", genread, (err) =>
         err ? console.log(err) : console.log('You Did It!')
     );
     });
