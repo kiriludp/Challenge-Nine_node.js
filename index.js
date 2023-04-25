@@ -78,8 +78,8 @@ inquirer
   - [Project Features] (#features)
   - [Tests](#tests)
   - [Collaborators](#credits)
-  - [Contact Information](#usernamer) (#email)
-  - [File Lisences] (#license)
+  - [Contact Information](#usernamer)(#email)
+  - [File Lisences](#license)
 
 
   ## Description
@@ -100,6 +100,8 @@ inquirer
   ## Tests
     ${answers.tests}
 
+    ![A picture of noodles with two hands; one holding chopsticks](\assets\haegeumchops.PNG)
+
   ## Collaborators
     ${answers.credits}
 
@@ -111,7 +113,7 @@ inquirer
     ${answers.lisence}
 `;
 
-        fs.writeFile('GenReadMe\testREADME.md', genread, (err) =>
+        fs.writeFile("README.md", genread, (err) =>
         err ? console.log(err) : console.log('You Did It!')
     );
     });
