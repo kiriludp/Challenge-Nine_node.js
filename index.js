@@ -2,16 +2,15 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./generateMarkdown.js');
+
 
 // TODO: Create an array of questions for user input
 
-const questions = 
 inquirer
-    .prompt([
+    .prompt ([
      {  
         type: 'input',
-        name: 'project title',
+        name: 'title',
         message: 'what is the title of your project?'
     },
     {
@@ -21,12 +20,12 @@ inquirer
     },
     {
         type: 'input',
-        name: 'use',
+        name: 'usage',
         message: 'provide the intended use of your project'
     },
     {
         type: 'input',
-        name: 'lessons',
+        name: 'learn',
         message: 'what did you learn during this process?'
     },
     {
@@ -65,23 +64,54 @@ inquirer
         message: 'include file license'
 
     },
-]);
+])
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data), (err) => {
-        if (err) throw err;
-        console.log('README saved');
-    })
-}
+    .then((answers) => {
+        var genread = `
+         # ${answers.title}
 
-// TODO: Create a function to initialize app
- function init() {
-    inquirer.prompt(questions).then((data) => {
-        console.log(data)
-    }
-    )
-}
+  ##Table of Contents
+  - [Project Description](#description)
+  - [Usage](#usage)
+  - [What I Learned](#learn)
+  - [Installation Steps](#installation)
+  - [Project Features] (#features)
+  - [Tests](#tests)
+  - [Collaborators](#credits)
+  - [Contact Information](#usernamer) (#email)
+  - [File Lisences] (#license)
 
-// Function call to initialize app
-//init(); 
+
+  ## Description
+    ${answers.description}
+
+  ## Usage
+    ${answers.usage}
+    
+  ## Learn
+    ${answers.learn}
+
+  ## Steps
+    ${answers.installation}
+
+  ## Features
+    ${answers.features}
+
+  ## Tests
+    ${answers.tests}
+
+  ## Collaborators
+    ${answers.credits}
+
+  ## Contact Information 
+    ${answers.username}
+    ${answers.email}
+
+  ## Lisences 
+    ${answers.lisence}
+`;
+
+        fs.writeFile('GenReadMe\testREADME.md', genread, (err) =>
+        err ? console.log(err) : console.log('You Did It!')
+    );
+    });
