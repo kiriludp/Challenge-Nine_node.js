@@ -1,7 +1,8 @@
 
-         # Professional README Generator
+# Professional README Generator
 
-  ##Table of Contents
+##Table of Contents
+
   - [Project Description](#description)
   - [Usage](#usage)
   - [What I Learned](#learn)
@@ -32,7 +33,7 @@
   ## Tests
     testReadMe included-- please see screen shots and included video.
 
-    ![A picture of noodles with two hands; one holding chopsticks](assetshaegeumchops.PNG)
+    ![A picture of noodles with two hands; one holding chopsticks](./assetshaegeumchops.PNG)
 
   ## Collaborators
     Special thanks to UW Coding Bootcamp instructor and TAs for detailed lessons and attention. Thanks to W3Schools and my fellow classmates for helping and feeling with me.   Calcifer the Kitten is heavily credited with providing emotional support. Shout out  to my music plaulists
